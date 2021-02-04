@@ -26,10 +26,11 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           # Command to execute on the remote server.
-          script: script
+          script: whoami
           # Hostname or IP address of the server.
           host: ${{ secrets.HOST }}
           # Username for authentication.
           username: ${{ secrets.USERNAME }}
           # File Location or string that contains a private key for either key-based or hostbased user authentication (OpenSSH format)
           key: ${{ secrets.PRIVATEKEY }}
+          fingerprint: ${{ secrets.PUBLICKEY }}
