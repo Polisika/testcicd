@@ -30,8 +30,8 @@ jobs:
           # Command to execute on the remote server.
           command: script
           # Hostname or IP address of the server.
-          host: ${{ sample.HOST }}
+          host: ${{ secrets.HOST }}
           # Username for authentication.
-          username: ${{ sample.USERNAME }}
+          username: ${{ secrets.USERNAME }}
           # File Location or string that contains a private key for either key-based or hostbased user authentication (OpenSSH format)
-          privateKey: ${{ sample.PRIVATEKEY }}
+          privateKey: ${{ secrets.PRIVATEKEY }}
