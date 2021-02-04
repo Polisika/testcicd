@@ -33,3 +33,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           # File Location or string that contains a private key for either key-based or hostbased user authentication (OpenSSH format)
           key: ${{ secrets.PRIVATEKEY }}
+          port: ${{ secrets.PORT }}
