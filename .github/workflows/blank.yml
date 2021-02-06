@@ -7,11 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       logLevel:
-        description: 'Log level'     
+        description: 'sent if you want run worker mle'     
         required: true
-        default: 'warning'
-      tags:
-        description: 'Test scenario tags'
+        default: 'run please'
 
 jobs:
   printInputs:
